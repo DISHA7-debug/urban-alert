@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# Civic Issues Reporter WebApp 🚨  
 
-## Project info
+A mobile-friendly web application that allows citizens to report civic issues in their locality, view & upvote issues raised by others, and track the status of their own reports (pending / total / solved).  
 
-**URL**: https://lovable.dev/projects/223ab39c-d6e3-4eba-a724-5aeefd20fd5b
+## 🌐 Live Demo  
 
-## How can I edit this code?
+_TODO: Add your deployed live demo link here once hosted._  
 
-There are several ways of editing your application.
+## 🧾 Project Overview  
 
-**Use Lovable**
+This project is built to help communities raise awareness of civic problems (like garbage, potholes, street-light issues, sewage, etc.) in a transparent way. Users can:  
+- Report a civic issue with details (description, location, possibly image or other metadata).  
+- Browse a feed of reported issues submitted by other users.  
+- Upvote issues — to show collective concern and prioritise widely faced problems.  
+- Check their personal reports: see how many are pending, how many are solved, and total submitted.  
+- View status updates when problems get resolved (if backend/service supports it).  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/223ab39c-d6e3-4eba-a724-5aeefd20fd5b) and start prompting.
+This empowers citizens to participate in local governance and makes civic authorities more accountable.  
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack  
 
-**Use your preferred IDE**
+- **Frontend:** React + Vite (modern, fast build and dev environment). :contentReference[oaicite:0]{index=0}  
+- **Routing / State / UI:** (As per your implementation — React Router / state management / UI components)  
+- **Styling / Responsiveness:** (Assumed use of CSS / Tailwind / media queries / responsive design)  
+- **Build & Deployment:** Vite build tool for bundling and production optimization. :contentReference[oaicite:1]{index=1}  
+- **Others:** (Any libraries/packages you used — list them if relevant)  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Project Structure  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```
+project-root/
+├── public/                # static public assets (if any)
+├── src/                   # source code — components, pages, styles, etc.
+│   ├── pages/             # e.g. Home, ReportIssue, MyReports, IssueDetails
+│   ├── components/        # reusable UI components
+│   ├── services/          # API calls or utility functions (if applicable)
+│   └── App.jsx / main.jsx # main application & routing
+├── package.json           # npm dependencies & scripts
+├── vite.config.js         # Vite configuration
+└── README.md              # this file
+```
 
-Follow these steps:
+You can adjust based on your actual folder layout.  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started (Local Development)  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Then open `http://localhost:5173/` (or the port configured) in a browser.  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Build for Production  
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This will produce an optimized production build (in `dist/` or configured output directory) ready for deployment.  
 
-## What technologies are used for this project?
+## ✅ How to Use  
 
-This project is built with:
+- Open the webapp (local or deployed).  
+- On **Home**: view all reported civic issues.  
+- Use **Report Issue** page/form to submit a new civic issue (fill in details and submit).  
+- On **My Reports** page: check your submitted issues and their statuses — pending, total, solved.  
+- Upvote existing issues to indicate community interest.  
+- (Optional) If you have admin / service-side support: update issue status when resolved so users can track progress.  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 What Problems This Solves  
 
-## How can I deploy this project?
+- Provides a centralised place for citizens to report civic issues instead of scattered complaints.  
+- Enables transparency: everyone can see reported problems and their statuses.  
+- Empowers communities: upvotes show collective concern, which local authorities can take seriously.  
+- Better tracking: users know whether their issues are addressed or still pending.  
 
-Simply open [Lovable](https://lovable.dev/projects/223ab39c-d6e3-4eba-a724-5aeefd20fd5b) and click on Share -> Publish.
+## 📂 Potential Enhancements / Future Work  
 
-## Can I connect a custom domain to my Lovable project?
+- Add user authentication (so reports tied to real users).  
+- Allow uploading images/photos for issues (for clarity & evidence).  
+- Add location-based mapping — show issues on a map for better visualization.  
+- Add notifications / status updates when issue status changes (solved, in-progress) — push or email alerts.  
+- Backend + database integration for persistent data storage (if not already done).  
+- Admin dashboard for authorities to manage, update, and mark issues solved.  
 
-Yes, you can!
+## 👥 Who Is This For  
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Citizens who want to report civic problems and see status transparently.  
+- Local community organizers or volunteer groups working to improve civic infrastructure.  
+- Developers / civic-tech enthusiasts looking to build or extend such platforms.  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+ 
+
+Thank you for checking out this project. Contributions, feedback, suggestions are welcome!  
+
